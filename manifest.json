@@ -1,0 +1,16 @@
+{
+
+  "manifest_version": 2,
+  "name": "GoodReadsButton",
+  "version": "1.0",
+  "description": "Adds a read button to all goodreads book pages.",
+  "icons": {
+    "48": "border-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.goodreads.com/*"],
+      "js": ["goodreads.js"]
+    }
+  ]
+}
